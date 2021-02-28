@@ -1,0 +1,30 @@
+.header{
+    max-width: 1200px;
+    margin: auto;
+}
+.header img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.heder-div{
+    display: flex;
+}
+ nav{
+     display: block;
+     text-decoration: none;
+    background-color: black;
+    line-height: 40px;
+    font-size: 20px;
+ }
+
+ nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: gray;
+}
