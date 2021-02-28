@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [friends, setFriends] = useState([]);
+  useEffect(() =>{
+    fetch('https://api.generated.photos/api/v1/faces?api_key=02qW3jqELimk1XpGWPjpsg')
+    .then(res => res.json())
+    .then(data => {setFriends(data)
+    console.log(data)
+    });
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        {
+          friends.map(image=> <Name name ={image.faces}></Name>)
+        }
+        
       </header>
     </div>
   );
+}
+
+function Name(props){
+   
+  return(
+    <div>
+
+    </div>
+  )
 }
 
 export default App;

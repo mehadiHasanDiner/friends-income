@@ -1,0 +1,26 @@
+খুব জরুরি বা ব্যক্তিগত কিছু হলে ইমেইল করে দিতে পারো jhankar.mahbub@gmail.com
+আর কোর্স রিলেটেড কিছু হলে এই ইমেইলে ইমেইল করে দাও
+programming.hero1@gmail.com
+
+///// Git /////////
+git remote remove origin
+
+
+
+
+////////////// Error: EPERM operation not permitted, mkdir 'c:\users\programer' //////
+
+1.npm cache clean --force
+2.npm i -g create-react-app
+3.npx create-react-app app-name
+
+
+  const handleAddPerson = (user) => {
+    let item = cart.indexOf(user);
+    if (item === -1) {
+      const newCart = [...cart,  user];
+      setCart(newCart);
+    } else {
+      alert("This Country Already Added!");
+    }
+  }
